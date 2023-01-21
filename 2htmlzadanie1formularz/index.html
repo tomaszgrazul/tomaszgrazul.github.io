@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2HTML Zadanie1</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mdovkpba" method="POST">
+        <label for="imie">Imie:</label><br>
+        <input type="text" name="imie" id="name"><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name="nazwisko" id="surname"><br>
+        <label for="mail">mail:</label><br>
+        <input type="text" name="mail" id="mail"><br>
+        <label for="numertel">Numer telefonu:</label><br>
+        <input type="text" name="telefon" id="phone"><br><br>
+        
+        <label for="town-choice">Wybierz miasto:</label><br>
+        <select name="miasto" id="town-choice">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br><br>
+
+        <label for="sex">Podaj płeć</label><br>
+            <label><input type="radio" name="płeć" value="kobieta">Kobieta</label>
+            <label><input type="radio" name="płeć" value="mężczyzna">Mężczyzna</label><br><br>
+        
+        <label for="permission">Zgoda na dane osobowe</label><br>
+        <label><input type="checkbox" name="potwierdzenie" value="jest zgoda">Potwierdź</label><br><br>
+
+        <label for="message">Wiadomość:</label><br>
+        <textarea cols="50" rows="4" name="wiadomość" id="message">Treść wiadomości</textarea><br>
+        <button type="submit" class="button"> Wyślij </button>
+    </form>
+
+</body>
+</html>
