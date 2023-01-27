@@ -1,0 +1,61 @@
+div{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 25px;
+    text-align: center;
+    block-size: fit-content; 
+}
+
+p{
+    color: yellowgreen;
+    margin: 0px;
+}
+
+header{
+    background-color: red;
+    flex-basis: 100%;       
+}
+
+aside{
+    flex-basis: 20%;
+    height: 500px; 
+}
+.asideleft{
+    background-color: green;
+}
+
+.text{
+    background-color: aquamarine;
+    flex-basis: 60%;
+    font-size: 40px;    
+}
+
+.asideright{
+    background-color: pink;
+}
+
+footer{
+    background-color: blueviolet;
+    flex-basis: 100%;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    header { order: 1;}
+    .text { order: 2; flex-basis: 80%;} /*pozostaje stała szerokość asideright*/
+    /*.text { order: 2; }*/
+    .asideright { order: 3;}
+    /*.asideright { order: 3; flex-grow: 1;}  zostanie stała szerokość text a rozciągnie się asideright*/
+    .asideleft { order: 4; flex-basis: 100%;}
+    footer { order: 5;}
+}
+
+@media (max-width:768px){
+    header { order: 1;}
+    .text { order: 2; flex-basis: 100%;}
+    .asideright { order: 4; flex-basis: 100%;}
+    .asideleft { order: 3; flex-basis: 100%;}
+    footer { order: 5;}
+}
